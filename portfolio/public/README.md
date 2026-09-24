@@ -1,10 +1,9 @@
-# Resume Placement Instructions
+# Resume Placement
 
-This directory contains the resume file referenced by the portfolio website.
+The official resume PDF for Aastha Pancholi is placed in this directory:
+- [Aastha_Pancholi_Resume.pdf](file:///c:/aastha_pancholi_portfolio_files/portfolio/public/Aastha_Pancholi_Resume.pdf)
 
-### How to use your actual resume:
-1. Save your completed resume as a PDF file named:
-   `Aastha_Pancholi_Resume.pdf`
-2. Overwrite the file in this folder:
-   `public/Aastha_Pancholi_Resume.pdf`
-3. The "View Resume" and "Download Resume" buttons on the portfolio website will immediately link directly to your official resume.
+### Status:
+- **File:** `public/Aastha_Pancholi_Resume.pdf` (Active)
+- The "Resume" button in the navigation header, the "View Resume" button in the hero section, and the mobile navigation drawer all link directly to this document.
+
