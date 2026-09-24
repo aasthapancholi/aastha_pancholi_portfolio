@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="100%" height="100%" fill="none" style="background: linear-gradient(145deg, #0b1329 0%, #0d1b38 100%); border-radius: 14px;">
+  <defs>
+    <!-- Background Grid -->
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" opacity="0.6"/>
+    </pattern>
+
+    <!-- Gradients -->
+    <linearGradient id="area-cyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="area-indigo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <linearGradient id="line-cyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+
+    <linearGradient id="line-indigo" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#a5b4fc"/>
+    </linearGradient>
+
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="glow-indigo" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Base Grid Fill -->
+  <rect width="100%" height="100%" fill="url(#grid-pattern)"/>
+
+  <!-- Card Header Bar -->
+  <rect x="30" y="24" width="660" height="42" rx="8" fill="#132247" opacity="0.8"/>
+  <circle cx="50" cy="45" r="4.5" fill="#f43f5e" opacity="0.8"/>
+  <circle cx="66" cy="45" r="4.5" fill="#eab308" opacity="0.8"/>
+  <circle cx="82" cy="45" r="4.5" fill="#10b981" opacity="0.8"/>
+  <text x="105" y="49" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12" letter-spacing="0.5">moodmedic.py — Algorithm Analytics &amp; Scoring Matrix</text>
+  <rect x="560" y="32" width="116" height="24" rx="12" fill="#0284c7" fill-opacity="0.25" stroke="#38bdf8" stroke-width="0.8"/>
+  <text x="575" y="48" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="600">Scale: 0 – 100</text>
+
+  <!-- Metric Badges Row -->
+  <!-- Metric 1: Emotional Stability -->
+  <rect x="30" y="82" width="206" height="74" rx="8" fill="#0f1f42" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="44" y="103" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="500">Emotional Stability Score</text>
+  <text x="44" y="137" fill="#38bdf8" font-family="'Outfit', sans-serif" font-size="28" font-weight="700">84.6<tspan font-size="14" fill="#64748b" font-weight="400"> /100</tspan></text>
+  <circle cx="204" cy="119" r="14" fill="#0369a1" fill-opacity="0.2" stroke="#38bdf8" stroke-width="1.2"/>
+  <path d="M 199 122 L 203 115 L 209 119" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Metric 2: Efficiency Index -->
+  <rect x="256" y="82" width="206" height="74" rx="8" fill="#0f1f42" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="270" y="103" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="500">Productivity Efficiency</text>
+  <text x="270" y="137" fill="#818cf8" font-family="'Outfit', sans-serif" font-size="28" font-weight="700">91.2<tspan font-size="14" fill="#64748b" font-weight="400"> /100</tspan></text>
+  <circle cx="430" cy="119" r="14" fill="#4338ca" fill-opacity="0.2" stroke="#818cf8" stroke-width="1.2"/>
+  <path d="M 425 120 L 429 116 L 435 122" stroke="#818cf8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- Metric 3: Assessment State -->
+  <rect x="482" y="82" width="208" height="74" rx="8" fill="#0f1f42" stroke="#1e3a8a" stroke-width="1"/>
+  <text x="496" y="103" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" font-weight="500">Evaluation State</text>
+  <text x="496" y="135" fill="#34d399" font-family="'Outfit', sans-serif" font-size="21" font-weight="600">Optimal Stability</text>
+  <circle cx="658" cy="119" r="6" fill="#10b981"/>
+  <circle cx="658" cy="119" r="11" fill="none" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+
+  <!-- Chart Canvas Box -->
+  <rect x="30" y="174" width="660" height="236" rx="10" fill="#09142e" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Y-Axis Grid Lines & Labels -->
+  <line x1="75" y1="205" x2="665" y2="205" stroke="#1e293b" stroke-dasharray="3 3"/>
+  <text x="45" y="209" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">100</text>
+
+  <line x1="75" y1="245" x2="665" y2="245" stroke="#1e293b" stroke-dasharray="3 3"/>
+  <text x="45" y="249" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">75</text>
+
+  <line x1="75" y1="285" x2="665" y2="285" stroke="#1e293b" stroke-dasharray="3 3"/>
+  <text x="45" y="289" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">50</text>
+
+  <line x1="75" y1="325" x2="665" y2="325" stroke="#1e293b" stroke-dasharray="3 3"/>
+  <text x="45" y="329" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">25</text>
+
+  <line x1="75" y1="365" x2="665" y2="365" stroke="#334155" stroke-width="1.2"/>
+  <text x="45" y="369" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10">0</text>
+
+  <!-- Area Fills -->
+  <!-- Efficiency Fill (Indigo) -->
+  <path d="M 90 365 L 90 260 Q 155 240 200 230 T 310 220 T 420 205 T 530 215 T 645 200 L 645 365 Z" fill="url(#area-indigo)"/>
+
+  <!-- Stability Fill (Cyan) -->
+  <path d="M 90 365 L 90 280 Q 155 270 200 250 T 310 240 T 420 225 T 530 230 T 645 220 L 645 365 Z" fill="url(#area-cyan)"/>
+
+  <!-- Curves -->
+  <!-- Indigo Curve: Efficiency -->
+  <path d="M 90 260 Q 155 240 200 230 T 310 220 T 420 205 T 530 215 T 645 200" fill="none" stroke="url(#line-indigo)" stroke-width="2.5" filter="url(#glow-indigo)"/>
+
+  <!-- Cyan Curve: Stability -->
+  <path d="M 90 280 Q 155 270 200 250 T 310 240 T 420 225 T 530 230 T 645 220" fill="none" stroke="url(#line-cyan)" stroke-width="2.8" filter="url(#glow-cyan)"/>
+
+  <!-- Data Points - Cyan Curve -->
+  <circle cx="90" cy="280" r="4.5" fill="#080d1a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="200" cy="250" r="4.5" fill="#080d1a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="310" cy="240" r="4.5" fill="#080d1a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="420" cy="225" r="4.5" fill="#080d1a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="530" cy="230" r="4.5" fill="#080d1a" stroke="#38bdf8" stroke-width="2.5"/>
+  <circle cx="645" cy="220" r="5.5" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Data Points - Indigo Curve -->
+  <circle cx="90" cy="260" r="4" fill="#080d1a" stroke="#818cf8" stroke-width="2"/>
+  <circle cx="200" cy="230" r="4" fill="#080d1a" stroke="#818cf8" stroke-width="2"/>
+  <circle cx="310" cy="220" r="4" fill="#080d1a" stroke="#818cf8" stroke-width="2"/>
+  <circle cx="420" cy="205" r="4" fill="#080d1a" stroke="#818cf8" stroke-width="2"/>
+  <circle cx="530" cy="215" r="4" fill="#080d1a" stroke="#818cf8" stroke-width="2"/>
+  <circle cx="645" cy="200" r="5" fill="#818cf8" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Callout Tooltip at Point (645, 200) -->
+  <rect x="565" y="178" width="95" height="34" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+  <text x="574" y="193" fill="#f8fafc" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600">Day 7: Optimal</text>
+  <text x="574" y="206" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="9">Stab: 85 | Eff: 91</text>
+
+  <!-- X-Axis Labels -->
+  <text x="82" y="385" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Day 1</text>
+  <text x="190" y="385" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Day 2</text>
+  <text x="300" y="385" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Day 3</text>
+  <text x="410" y="385" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Day 4</text>
+  <text x="520" y="385" fill="#64748b" font-family="'JetBrains Mono', monospace" font-size="10.5">Day 5</text>
+  <text x="632" y="385" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600">Day 7</text>
+
+  <!-- Chart Legends -->
+  <circle cx="100" cy="190" r="4" fill="#38bdf8"/>
+  <text x="110" y="194" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10.5">Emotional Stability</text>
+  <circle cx="240" cy="190" r="4" fill="#818cf8"/>
+  <text x="250" y="194" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10.5">Productivity Efficiency</text>
+</svg>
